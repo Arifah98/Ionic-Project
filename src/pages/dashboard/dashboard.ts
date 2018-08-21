@@ -21,20 +21,24 @@ export class DashboardPage {
       data: {
           datasets: [{
               label: '# of Votes',
-              data: [76,24],
+              data: [75,25],
               backgroundColor: [
-                  'blue', 'white',
-                  
-                  
+                  'blue', 'white',      
               ],
               hoverBackgroundColor: [
                   'blue','white',
-                
               ]
           }]
-      }
+      },
 
   });
+
+
+  }
+
+  convertDate(){
+    return new Date().toDateString();
+    
   }
 
 }

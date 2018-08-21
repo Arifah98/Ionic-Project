@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SettingsPage } from '../pages/settings/settings';
 import { LoginPage } from '../pages/login/login';
+import { TopSalesPageModule } from '../pages/top-sales/top-sales.module';
+import { GeneralManagerPageModule } from '../pages/general-manager/general-manager.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { LoginPage } from '../pages/login/login';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp) 
+    TopSalesPageModule,
+    GeneralManagerPageModule,
+    IonicModule.forRoot(MyApp)  
   ],
   bootstrap: [IonicApp],
   entryComponents: [

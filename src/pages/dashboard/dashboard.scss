@@ -22,11 +22,37 @@ page-dashboard {
         color: whitesmoke;
     }
     .block21{
-        background-color: rgb(10, 42, 109);
+        background-color: rgb(56, 107, 216);
         color: whitesmoke;
     }
 
     .note1{
         color: black;
     }
+
+    .relative {
+        position: relative;
+      }
+      
+      .absolute-center {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .text-center{
+        text-align: center;
+      }
+      
+      p {
+        font-size: 1.3rem;
+        
+      }
+      
+      
+      
+     
+
+    
 }
