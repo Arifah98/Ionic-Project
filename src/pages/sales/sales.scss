@@ -4,19 +4,37 @@ page-sales {
         border:3px solid white ;
         box-shadow: 2px 2px 2px gainsboro;
         border-radius: 15% ;
-       
+        width: 80%;
+        height: 70%;
     }
     .senior-img{
         border:3px solid white ;
         box-shadow: 2px 2px 2px gainsboro;
         border-radius: 15% ;
-       
+        width: 80%;
+        height: 70%;
     }
+
+    
 
     .general-img{
         border:3px solid white ;
         box-shadow: 2px 2px 2px gainsboro;
         border-radius: 15% ;
-       
+        width: 80%;
+        height: 70%;
     }
-}
+
+    ion-scroll[scrollX]{
+        overflow-x: scroll !important;
+        width: auto;
+        white-space: nowrap;
+
+        
+      }
+     
+      SCROLL-CONTENT{
+          overflow-y: auto !important;
+      }
+      
+    }

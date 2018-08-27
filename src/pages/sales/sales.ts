@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,  NavParams } from 'ionic-angular';
 
 
 
@@ -8,19 +8,15 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'sales.html'
 })
 export class SalesPage {
-
  
-  constructor(public navCtrl: NavController) {
-
+ 
+ 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
+    
+    
   }
 
   
-  pageTopSales() {
-    this.navCtrl.push('TopSalesPage');
-  }
-
-  pageGeneralManager() {
-    this.navCtrl.push('GeneralManagerPage');
-  }
-
+  
 }

@@ -2,76 +2,90 @@
 <ion-content>
   <ion-list no-lines>
       <h1 margin> Sales</h1>
-      
-      <ion-row>
-          <h6 margin>TOP SALES </h6>
-          <button ion-item (click)="pageTopSales()">See All</button> 
-        <ion-col  width-25 block>
-            <img class= "sales-img" src="assets/imgs/p1.png">
-           Jane Wall
-           <div>$1000</div>
-        </ion-col>
-        <ion-col width-25>
+      <ion-item>
+      <h6 item-start >TOP SALES </h6>
+      <div item-end padding>See all </div></ion-item>
+      <ion-scroll scrollX="true" style="width:130vw; height:140px"  >
+      <ion-row nowrap padding>
+          <ion-col col-3> 
+            <img  class= "sales-img" src="assets/imgs/p1.png">
+            <div>Jane Wall</div>
+            <div>$ 1000</div>
+            </ion-col>
+            <ion-col col-3> 
             <img class= "sales-img" src="assets/imgs/p2.png">
-          Alice V 
-          <div>$299</div>
-        </ion-col>
-        <ion-col width-25>
+            <div>Alice V.</div>
+            <div>$ 299</div>
+            </ion-col>
+            <ion-col col-3> 
             <img  class= "sales-img" src="assets/imgs/p3.png">
-          Alien J
-          <div>$50</div>
-        </ion-col>
-        <ion-col width-25>
+            <div>Alien J.</div>
+            <div>$ 50</div>
+            </ion-col>
+            <ion-col col-3> 
             <img  class= "sales-img" src="assets/imgs/p4.png">
-          Abu Razak 
-          <div>$180</div>
-        </ion-col>
-        
-    </ion-row>
+            <div>Abu Razak</div>
+            <div>$ 1800</div>
+            </ion-col> 
+            <ion-col col-3> 
+                
+            </ion-col> 
+          </ion-row>
+  </ion-scroll>
   </ion-list>
+
   <ion-list no-lines>
       <h6 margin>SENIOR MANAGEMENT</h6>
-        <ion-row>
-          <ion-col width-25>
+      <ion-scroll scrollX="true" style="width:130vw; height:140px">
+        <ion-row nowrap padding>
+          <ion-col col-3>
               <img class= "senior-img" src="assets/imgs/s1.png">
-            John F.
+            <div>John F.</div>
             <div>CEO</div>
           </ion-col>
-          <ion-col width-25>
+          <ion-col col-3>
               <img class= "senior-img" src="assets/imgs/s2.png">
-            Abby S.
+            <div>Abby S.</div>
             <div>V.P</div>
           </ion-col>
-          <ion-col width-25>
+          <ion-col col-3>
               <img class= "senior-img" src="assets/imgs/s3.png">
-             Lea Lee
+            <div> Lea Lee</div>
              <div>V.P</div>
           </ion-col>
-          <ion-col width-25>
+          <ion-col col-3>
               
           </ion-col>
       </ion-row>
+      </ion-scroll>
     </ion-list>
+
     <ion-list no-lines>
-        <h6 margin>GENERAL MANAGER</h6>
-          <ion-row>
-              <button ion-item (click)="pageGeneralManager()">See All</button> 
-            <ion-col width-25 block>
+        <ion-item>
+            <h6 item-start >GENERAL MANAGER </h6>
+            <div item-end padding>See all </div></ion-item>
+            <ion-scroll scrollX="true" style="width:130vw; height:140px"  >
+        <ion-row  nowrap padding>
+            <ion-col col-3>
                 <img class= "general-img"  src="assets/imgs/g1.png">
-              Alan Kadir
+              <div>Alan Kadir</div>
             </ion-col>
-            <ion-col width-25>
+            <ion-col col-3>
                 <img class= "general-img" src="assets/imgs/g2.png">
-              Ariff Faizal
+              <div>Ariff Faizal</div>
             </ion-col>
-            <ion-col width-25>
+            <ion-col col-3>
                 <img class= "general-img" src="assets/imgs/g3.png">
-              Mazli Ibrahim
+              <div>Mazli Ibrahim</div>
             </ion-col>
-            <ion-col width-25>
+            <ion-col col-3>
                 <img class= "general-img" src="assets/imgs/g4.png">
-              Ivan Divo
+              <div>Ivan Divo</div>
             </ion-col>
+            <ion-col col-3> 
+                
+              </ion-col> 
         </ion-row>
+        </ion-scroll>
       </ion-list>
 </ion-content>
