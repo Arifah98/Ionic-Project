@@ -2,7 +2,7 @@
 
 <ion-content padding>
    <ion-note  class = "note1">{{convertDate()| date:'EEEE, MMMM d'}}</ion-note>
-  <h1>Revenue</h1>
+  <h1><b><font size="6">Revenue</font></b></h1>
     <ion-row>
       <ion-col width-25 block>
        
@@ -32,49 +32,27 @@
       </ion-col>
   </ion-row>
   <ion-row>
-      <h1>Commission</h1>
-     
-      <ion-card>
-          <ion-list>
-              <button ion-item>
-                <ion-icon name="cash"  item-start [style.color]="'green'"></ion-icon>
-                Cash 
-                <ion-note class = "note1" item-end>$791</ion-note>
-              </button>
-            </ion-list>
-        <ion-list>
-            <button ion-item>
-              <ion-icon name="trophy"  item-start [style.color]="'yellow'"></ion-icon>
-               Point 
-               <div>
-                  <ion-note class = "note1"  item-start>Available</ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-               <ion-note class = "note1" item-end >$273</ion-note></div>
-               <div>
-                  <ion-note class = "note1" item-start>Pending</ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-                  <ion-note class = "note1" item-end></ion-note>
-               <ion-note class = "note1" item-end>10</ion-note>
-              </div>
-            </button>
-          </ion-list>
-    </ion-card>
-  
+      <h1><b><font size="6">Commision</font></b></h1>
+      <ion-item>
+        <div> <ion-icon name="cash" [style.color]="'green'"></ion-icon><b> Cash</b></div>
+        <div item-end>$791</div>
+      </ion-item>
+      <ion-item no-lines>
+          <div> <ion-icon name="trophy" [style.color]="'yellow'"></ion-icon> <b>Points</b></div>
+        <ion-item no-lines>
+         <div>Available</div>
+         <div item-end>273</div>
+        </ion-item>
+        <ion-item no-lines > 
+            <div>Pending</div>
+            <div item-end>10</div>
+           </ion-item>
+      </ion-item>
+      
     
   </ion-row>
-  <h1>Stocks</h1>
+  <h1><b><font size="6">Stocks</font></b></h1>
+  
   <ion-row>
           <ion-col witdth-25>
               <div class="relative">

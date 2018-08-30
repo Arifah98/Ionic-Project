@@ -11,4 +11,8 @@ export class OrdersPage {
 
   }
 
+  pageDetail(){
+    this.navCtrl.push('DetailPage');
+  }
+
 }

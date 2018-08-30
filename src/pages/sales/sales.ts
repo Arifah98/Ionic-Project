@@ -17,6 +17,8 @@ export class SalesPage {
     
   }
 
-  
+  pageProfile(){
+    this.navCtrl.push('ProfilePage');
+  }
   
 }

@@ -21,13 +21,13 @@ export class DashboardPage {
       data: {
           datasets: [{
               label: '# of Votes',
-              data: [75,25],
+              data: [25,75],
               backgroundColor: [
-                  'blue', 'white',      
+                  '#DCDCDC', '#0080FF',      
               ],
               hoverBackgroundColor: [
-                  'blue','white',
-              ]
+                  '#DCDCDC','#0080FF',
+              ] 
           }]
       },
 

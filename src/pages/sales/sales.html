@@ -7,10 +7,12 @@
       <div item-end padding>See all </div></ion-item>
       <ion-scroll scrollX="true" style="width:130vw; height:140px"  >
       <ion-row nowrap padding>
-          <ion-col col-3> 
-            <img  class= "sales-img" src="assets/imgs/p1.png">
+          <ion-col col-3  (click)="pageProfile()"> 
+              
+            <img  class= "sales-img" src="assets/imgs/p1.png" >
             <div>Jane Wall</div>
             <div>$ 1000</div>
+          
             </ion-col>
             <ion-col col-3> 
             <img class= "sales-img" src="assets/imgs/p2.png">
@@ -35,9 +37,10 @@
   </ion-list>
 
   <ion-list no-lines>
-      <h6 margin>SENIOR MANAGEMENT</h6>
+      <div padding>SENIOR MANAGEMENT</div>
       <ion-scroll scrollX="true" style="width:130vw; height:140px">
         <ion-row nowrap padding>
+            
           <ion-col col-3>
               <img class= "senior-img" src="assets/imgs/s1.png">
             <div>John F.</div>

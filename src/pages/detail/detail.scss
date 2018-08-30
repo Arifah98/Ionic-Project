@@ -1,0 +1,45 @@
+page-detail {
+
+    .block{
+        border-radius: 6%;
+        width: 95%;
+        height: 19%;
+        background-color: #f9a602; 
+        color: white;  
+        
+    }
+
+    .detail{
+        background-color: #f9a602;
+        color:white;
+        border-bottom: 2px solid white;
+       
+        
+    }
+    .block2{
+        border-radius: 6%;
+        width: 95%;
+        height: 43%;
+        background-color: #f9a602; 
+        color: white; 
+         
+        
+    }
+
+
+    .sales-img{
+        border:3px solid white ;
+        box-shadow: 2px 2px 2px gainsboro;
+        border-radius: 50% ;
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-img{
+        border:1.5px solid white ;
+        box-shadow: 1px 1px 1px gainsboro;
+        border-radius: 30% ;
+        width: 60px;
+        height: 60px;
+    }
+}
