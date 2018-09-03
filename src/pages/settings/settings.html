@@ -9,27 +9,27 @@
 <ion-content padding>
  <ion-item no-lines padding>
 <h1 item-start ><font size="6"><b>Settings</b></font></h1>
-<button item-end ion-button round  color="secondary" class="save">Save</button>
+<button item-end ion-button round  color="secondary" class="save" (click)= "save()">Save</button>
 </ion-item>
 
 <h3 padding><b>Account</b></h3>
   <ion-item >
     <ion-label fixed>Username</ion-label>
-    <ion-input type="text" value="abc@gmail.com"></ion-input>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
   </ion-item>
   <ion-item >
     <ion-label fixed>Password</ion-label>
-    <ion-input type="password" value ="abc123"></ion-input>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
   </ion-item>
 
   <h3 padding><b>Company Info</b></h3>
   <ion-item >
       <ion-label fixed>Name</ion-label>
-      <ion-input type="text" value="Company ABC"></ion-input>
+      <ion-input type="text" [(ngModel)]="company.name"></ion-input>
     </ion-item>
     <ion-item >
       <ion-label fixed>Address</ion-label>
-      <ion-textarea style="overflow:hidden" type="text" value="Taman Wahyu"></ion-textarea>
+      <ion-textarea row ="5" type="text" [(ngModel)]="company.address"></ion-textarea>
     </ion-item>
 
     <h3 padding><b>Sale's Discount & Point</b></h3>

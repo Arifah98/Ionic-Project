@@ -2,6 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { IonicStorageModule } from '@ionic/storage';
+
 
 import { OrdersPage } from '../pages/orders/orders';
 import { SalesPage } from '../pages/sales/sales';
@@ -29,7 +31,8 @@ import { DetailPageModule } from '../pages/detail/detail.module';
     BrowserModule,
     ProfilePageModule,
     DetailPageModule,
-    IonicModule.forRoot(MyApp)  
+    IonicModule.forRoot(MyApp) ,
+    IonicStorageModule.forRoot()  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
