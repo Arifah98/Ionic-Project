@@ -100,5 +100,13 @@ this.generals = [
   ionViewDidLoad() {
     console.log('ionViewDidLoad SalesPage');
   }
+
+  ionViewDidEnter(){
+    // load new saved data in local storage
+  }
+
+  addPage(){
+    this.navCtrl.push('AddPage');
+  }
   
 }
