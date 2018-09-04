@@ -5,59 +5,26 @@
       <ion-item>
       <h6 item-start >TOP SALES </h6>
       <div item-end padding>See all </div></ion-item>
-      <ion-scroll scrollX="true" style="width:130vw; height:140px"  >
+      <ion-scroll scrollX="true" style="width:130vw; height:147px"  >
       <ion-row nowrap padding>
-          <ion-col col-3  (click)="pageProfile()"> 
-              
-            <img  class= "sales-img" src="assets/imgs/p1.png" >
-            <div>Jane Wall</div>
-            <div>$ 1000</div>
-          
+          <ion-col col-3 responsive-sm *ngFor="let user of users" (click)="pageProfile()"> 
+            <img  class= "sales-img" [src]="user.imageURL" >
+            <div>{{ user.name }}</div>
+            <div>{{ user.cash }}</div>
             </ion-col>
-            <ion-col col-3> 
-            <img class= "sales-img" src="assets/imgs/p2.png">
-            <div>Alice V.</div>
-            <div>$ 299</div>
-            </ion-col>
-            <ion-col col-3> 
-            <img  class= "sales-img" src="assets/imgs/p3.png">
-            <div>Alien J.</div>
-            <div>$ 50</div>
-            </ion-col>
-            <ion-col col-3> 
-            <img  class= "sales-img" src="assets/imgs/p4.png">
-            <div>Abu Razak</div>
-            <div>$ 1800</div>
-            </ion-col> 
-            <ion-col col-3> 
-                
-            </ion-col> 
           </ion-row>
   </ion-scroll>
   </ion-list>
 
   <ion-list no-lines>
       <div padding>SENIOR MANAGEMENT</div>
-      <ion-scroll scrollX="true" style="width:130vw; height:140px">
+      <ion-scroll scrollX="true" style="width:130vw; height:147px">
         <ion-row nowrap padding>
             
-          <ion-col col-3>
-              <img class= "senior-img" src="assets/imgs/s1.png">
-            <div>John F.</div>
-            <div>CEO</div>
-          </ion-col>
-          <ion-col col-3>
-              <img class= "senior-img" src="assets/imgs/s2.png">
-            <div>Abby S.</div>
-            <div>V.P</div>
-          </ion-col>
-          <ion-col col-3>
-              <img class= "senior-img" src="assets/imgs/s3.png">
-            <div> Lea Lee</div>
-             <div>V.P</div>
-          </ion-col>
-          <ion-col col-3>
-              
+          <ion-col col-3 responsive-sm *ngFor="let senior of seniors">
+              <img class= "senior-img" [src]="senior.imageURL">
+            <div>{{ senior.name }}</div>
+            <div>{{ senior.jawatan }}</div>
           </ion-col>
       </ion-row>
       </ion-scroll>
@@ -67,27 +34,12 @@
         <ion-item>
             <h6 item-start >GENERAL MANAGER </h6>
             <div item-end padding>See all </div></ion-item>
-            <ion-scroll scrollX="true" style="width:130vw; height:140px"  >
+            <ion-scroll scrollX="true" style="width:130vw; height:147px"  >
         <ion-row  nowrap padding>
-            <ion-col col-3>
-                <img class= "general-img"  src="assets/imgs/g1.png">
-              <div>Alan Kadir</div>
+            <ion-col col-3 responsive-sm *ngFor="let general of generals">
+                <img class= "general-img"  [src]="general.imageURL">
+              <div>{{ general.name }}</div>
             </ion-col>
-            <ion-col col-3>
-                <img class= "general-img" src="assets/imgs/g2.png">
-              <div>Ariff Faizal</div>
-            </ion-col>
-            <ion-col col-3>
-                <img class= "general-img" src="assets/imgs/g3.png">
-              <div>Mazli Ibrahim</div>
-            </ion-col>
-            <ion-col col-3>
-                <img class= "general-img" src="assets/imgs/g4.png">
-              <div>Ivan Divo</div>
-            </ion-col>
-            <ion-col col-3> 
-                
-              </ion-col> 
         </ion-row>
         </ion-scroll>
       </ion-list>
