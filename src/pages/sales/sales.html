@@ -8,7 +8,7 @@
             <button ion-fab mini size (click)="addPage()"><ion-icon name="add"></ion-icon></button>
         </ion-fab>
       </ion-item>
-      <ion-scroll scrollX="true" style="width:130vw; height:145px"  >
+      <ion-scroll scrollX="true" style="width:130vw; height:145px"  > 
       <ion-row nowrap padding>
           <ion-col col-3 responsive-sm *ngFor="let user of users" (click)="pageProfile()"> 
             <img  class= "sales-img" [src]="user.imageURL" >

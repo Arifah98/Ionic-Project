@@ -51,7 +51,7 @@ export class AddPage {
 
     loader.present();
   
-    localStorage.clear();
+    
     
   }
 
