@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,LoadingController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the AddPage page.
@@ -18,9 +19,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AddPage {
   user: any;
   userList: Array<any>;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public storage: Storage,public loadingCtrl: LoadingController,public navCtrl: NavController, public navParams: NavParams) {
     this.resetData();
     this.userList = [];
+    
   }
 
   ionViewDidLoad() {
@@ -30,19 +32,33 @@ export class AddPage {
   submit(){
     this.userList.push(this.user);
     console.log(this.userList);
-    this.resetData();
-    //code to save to local storage
-
-
     
+     //code to save to local storage
+    this.storage.set('USER',JSON.parse(JSON.stringify(this.user)));
+    console.log(this.user);
+    this.resetData();
+   
+   
+
     //back to previous page
     this.navCtrl.pop();
+    let loader = this.loadingCtrl.create({
+      content : "Please wait....",
+      spinner:"circles",
+      duration:3000 
+
+    })
+
+    loader.present();
+  
+    localStorage.clear();
+    
   }
 
   resetData(){
     this.user = {
       name: null,
-      picture: null,
+      imageURL: null,
       cash: null
     };
   }

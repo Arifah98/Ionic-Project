@@ -14,13 +14,13 @@
 
 
 <ion-content>
-  <img [src]="user.picture || 'assets/imgs/logo.png'"/>
+  <img [src]="user.imageURL || 'assets/imgs/logo.png'"/>
   <ion-list>
     <ion-item>
       <ion-input placeholder="Name" [(ngModel)]="user.name"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input placeholder="Picture" [(ngModel)]="user.picture"></ion-input>
+      <ion-input placeholder="Picture" [(ngModel)]="user.imageURL"></ion-input>
     </ion-item>
     <ion-item>
       <ion-input placeholder="Cash" [(ngModel)]="user.cash"></ion-input>

@@ -1,14 +1,14 @@
 
 <ion-content>
-    <ion-fab top right>
-        <button ion-fab mini (click)="addPage()"><ion-icon name="add"></ion-icon></button>
-    </ion-fab>
-  <ion-list no-lines>
-      <h1 margin> Sales</h1>
-      <ion-item>
-      <h6 item-start >TOP SALES </h6>
-      <div item-end padding>See all </div></ion-item>
-      <ion-scroll scrollX="true" style="width:130vw; height:147px"  >
+  
+      <h1 padding><b><font size="6"> Sales</font></b></h1>
+      <ion-item padding no-lines>
+      <h6><b>TOP SALES</b> </h6>
+      <ion-fab top right>
+            <button ion-fab mini size (click)="addPage()"><ion-icon name="add"></ion-icon></button>
+        </ion-fab>
+      </ion-item>
+      <ion-scroll scrollX="true" style="width:130vw; height:145px"  >
       <ion-row nowrap padding>
           <ion-col col-3 responsive-sm *ngFor="let user of users" (click)="pageProfile()"> 
             <img  class= "sales-img" [src]="user.imageURL" >
@@ -17,11 +17,12 @@
             </ion-col>
           </ion-row>
   </ion-scroll>
-  </ion-list>
+  <button no-lines ion-item>
+        <div item-end><font size="3">See more</font></div>
+      </button>
 
-  <ion-list no-lines>
-      <div padding>SENIOR MANAGEMENT</div>
-      <ion-scroll scrollX="true" style="width:130vw; height:147px">
+      <div padding><b>SENIOR MANAGEMENT</b></div>
+      <ion-scroll scrollX="true" style="width:130vw; height:145px">
         <ion-row nowrap padding>
             
           <ion-col col-3 responsive-sm *ngFor="let senior of seniors">
@@ -31,13 +32,12 @@
           </ion-col>
       </ion-row>
       </ion-scroll>
-    </ion-list>
+     <ion-item no-lines>
 
-    <ion-list no-lines>
-        <ion-item>
-            <h6 item-start >GENERAL MANAGER </h6>
-            <div item-end padding>See all </div></ion-item>
-            <ion-scroll scrollX="true" style="width:130vw; height:147px"  >
+     </ion-item>
+    
+      <div padding><b>GENERAL MANAGER</b></div>
+            <ion-scroll scrollX="true" style="width:130vw; height:145px"  >
         <ion-row  nowrap padding>
             <ion-col col-3 responsive-sm *ngFor="let general of generals">
                 <img class= "general-img"  [src]="general.imageURL">
@@ -45,5 +45,9 @@
             </ion-col>
         </ion-row>
         </ion-scroll>
-      </ion-list>
+        <button no-lines ion-item>
+                <div item-end><font size="3">See more</font></div>
+              </button>
+        
+    
 </ion-content>
